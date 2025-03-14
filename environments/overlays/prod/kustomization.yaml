@@ -5,10 +5,7 @@ namespace: rollouts-demo-prod
 
 resources:
 - monitor-token.yaml
-- rollout-manager.yaml
+# - rollout-manager.yaml
 - ../../../apps/rollout/overlays/bluegreen
 - ../../../apps/rollout/overlays/canary
 - networkpolicy-cicd.yaml
-images:
-- name: argoproj/rollouts-demo
-  newTag: green
